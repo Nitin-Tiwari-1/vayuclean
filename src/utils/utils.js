@@ -55,6 +55,10 @@ import ahu_1 from "../assets/ahu_1.png";
 import ahu_2 from "../assets/ahu_2.png";
 import bibo_and_ahu_filter_1 from "../assets/bibo_and_ahu_filter_1.png";
 import bibo_and_ahu_filter_2 from "../assets/bibo_and_ahu_filter_2.png";
+import wet_shower_1 from "../assets/wet_shower_1.png";
+import wet_shower_2 from "../assets/wet_shower_2.png";
+import wet_shower_3 from "../assets/wet_shower_3.png";
+import wet_shower_4 from "../assets/wet_shower_4.png";
 
 const HomeHeroBannerImg = [VayuBanner, VayuBanner];
 
@@ -123,5 +127,9 @@ export {
   ahu_1,
   ahu_2,
   bibo_and_ahu_filter_1,
-  bibo_and_ahu_filter_2
+  bibo_and_ahu_filter_2,
+  wet_shower_1,
+  wet_shower_2,
+  wet_shower_3,
+  wet_shower_4,
 };

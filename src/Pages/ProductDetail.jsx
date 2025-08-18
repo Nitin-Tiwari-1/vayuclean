@@ -34,6 +34,22 @@ const ProductDetail = () => {
   return (
     <>
       <Section className="bg-white md:pt-32 pt-28">
+        {/* ✅ Back Button */}
+        <div className="mb-6">
+            
+            {category ? (
+              <Link
+                to={`/category/${category.slug}`}
+                className="inline-block px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 transition"
+              >
+                ← Back to {product.category}
+                
+              </Link>
+            ) : (
+              product.category
+            )}
+          
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* ✅ Product Image Slider */} 
           <div className="w-full h-[500px] relative">

@@ -23,6 +23,15 @@ const CategoryProducts = () => {
   return (
     <>
       <Section className="lg:pt-32 pt-28">
+        {/* ✅ Back Button */}
+        <div className="mb-6">
+          <Link
+            to="/categories" 
+            className="inline-block px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 transition"
+          >
+            ← Back to All Categories
+          </Link>
+        </div>
         <SectionTitle className="mb-10 text-center">
           {category.name}
         </SectionTitle>

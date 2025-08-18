@@ -23,6 +23,7 @@ import {
    L_Shaped_Air_Shower_1,L_Shaped_Air_Shower_2,
    Cargo_Air_Shower_1,Cargo_Air_Shower_2,
    bibo_1,bibo_2,ahu_1,ahu_2,bibo_and_ahu_filter_1,bibo_and_ahu_filter_2,
+   wet_shower_1,wet_shower_2,wet_shower_3,wet_shower_4,
   } from "./utils";
 
 export const products = [
@@ -424,7 +425,7 @@ export const products = [
     slug: "Dynamic-pass-box",
     description: "A Dynamic Pass Box is equipped with HEPA filters to maintain air cleanliness during transfer.It uses continuous airflow to protect materials from contamination.Essential for critical cleanroom applications like pharma and biotech industries.",
     description2: "Our world-class range of Dynamic Pass Boxes is designed in strict conformation with international standards.They are used for transferring materials between classified areas through a controlled environment,ensuring zero cross-contamination and maintaining product & process integrity.",
-    category: "PASS BOXES",
+    category: "Pass Boxes",
     image: Dynamic_Pass_Box_1,
     imagesslide: [
       Dynamic_Pass_Box_1,
@@ -930,6 +931,86 @@ export const products = [
       "Electronic & Semiconductor Units"
     ]
   },
+  {
+    id: 15,
+    name: "Wet Shower",
+    slug: "wet-shower",
+    description: "Wet Shower is a decontamination chamber designed for cleanrooms and laboratories. It sprays a fine mixture of air and water to remove particles from clothing, ensuring contamination control for pharmaceuticals, life sciences, and high-precision industries.",
+    description2: "The Wet Shower from Quality Clean Equipment is uniquely designed for micro labs and clean room applications. It is widely used in industries for decontamination of particles from the clothing of users. \n\nA mixture of air and water is sprayed on the user’s clothing. The entire process is controlled by a Microprocessor or PLC unit. \n\nThe Wet Shower is highly effective for controlling contamination in particle-sensitive processes such as pharmaceuticals, drug testing, and research applications involving molecular biology, biochemical experiments, and cell & tissue culture experiments.",
+    category: "Wet shower",
+    image: wet_shower_1,
+    imagesslide: [
+      wet_shower_1,
+      wet_shower_2,
+      wet_shower_3,
+      wet_shower_4,
+    ],
+    listdesc: "WET SHOWER (MOC SS 304,316,316L)",
+    
+    list: [
+      {
+        "title": "Type",
+        "description": "Wet Shower"
+      }, 
+      {
+        "title": "MOC",
+        "description": "SS 304 / SS 316 / Customized"
+      }, 
+      {
+        "title": "Flow",
+        "description": "From 2 sides"
+      }, 
+      {
+        "title": "Velocity at nozzle",
+        "description": "25–30 MPS"
+      }, 
+      {
+        "title": "Air cleanliness",
+        "description": "ISO Class 5"
+      }, 
+      {
+        "title": "HEPA filter",
+        "description": "H13/H14 (99.997% efficiency, down to 0.3 micron)"
+      }, 
+      {
+        "title": "Door",
+        "description": "SS 304 double wall with service panel & toughened view glass"
+      }, 
+      {
+        "title": "Interlocking",
+        "description": "Electromagnetic door interlocks"
+      }, 
+      {
+        "title": "Lights/Switches",
+        "description": "Fluorescent light & ON/OFF switches for blower & lights"
+      }, 
+      {
+        "title": "Vibration level",
+        "description": "Minimum"
+      }, 
+      {
+        "title": "Power supply",
+        "description": "220–230V AC / Three Phase / 50Hz"
+      }, 
+
+    ],
+    optional: [
+      "Audio-visual alarm indicating condition of HEPA filters",
+      "Clean down timer with operation hold indicator",
+      "VFD-based control systems",
+      "PLC control",
+    ],
+    applications: [
+      "Microelectronics and semiconductor industries",
+      "Biomedical research",
+      "Life sciences",
+      "Pharmaceuticals",
+      "Spray painting",
+      "High-precision manufacturing processes"
+    ]
+
+  },
+  
 ];
 
 // ✅ Category list separately
@@ -942,16 +1023,22 @@ export const categories = [
     slug: "laminar-air-flow",
   },
   {
-    name: "Pass Boxes",
-    description: "Pass Boxes are specially designed cleanroom equipment used to safely transfer materials between controlled environments while minimizing contamination. Available in Static, Mechanical, L-Type, and Dynamic models, they ensure product protection, maintain cleanroom integrity, and support compliance with pharmaceutical, biotech, and research standards.",
-    image: passboxshowcase_image_1,
-    slug: "pass-box-static-dynamic",
-  },
-  {
     name: "Air Shower",
     description: "Air Showers are specialized entry systems designed to remove dust and particulate contaminants from personnel and materials before entering controlled environments. They use high-velocity HEPA-filtered air jets to ensure maximum cleanliness. Ideal for cleanrooms, pharmaceutical, electronics, and biotech industries.",
     image: air_shower_2,
     slug: "air-shower",
+  },
+  {
+    name: "Wet shower",
+    description: "Wet Shower is a decontamination chamber designed for cleanrooms and laboratories. It sprays a fine mixture of air and water to remove particles from clothing, ensuring contamination control for pharmaceuticals, life sciences, and high-precision industries.",
+    image: wet_shower_2,
+    slug: "shower",
+  },
+  {
+    name: "Pass Boxes",
+    description: "Pass Boxes are specially designed cleanroom equipment used to safely transfer materials between controlled environments while minimizing contamination. Available in Static, Mechanical, L-Type, and Dynamic models, they ensure product protection, maintain cleanroom integrity, and support compliance with pharmaceutical, biotech, and research standards.",
+    image: passboxshowcase_image_1,
+    slug: "pass-box-static-dynamic",
   },
   {
     name: "Clean Air & Filtration Equipment",
@@ -959,10 +1046,4 @@ export const categories = [
     image: bibo_and_ahu_filter_2,
     slug: "clean-air-filtration-equipment",
   },
-  // {
-  //   name: "clean",
-  //   description: "This is a test list item",
-  //   image: "https://picsum.photos/300/200?random=10",
-  //   slug: "clean",
-  // },
 ];
