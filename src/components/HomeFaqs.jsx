@@ -25,6 +25,21 @@ const faqData = [
     answer:
       "Delivery times vary by product but generally range from 2 to 6 weeks depending on specifications and quantity.",
   },
+  {
+    question: "What kind of after-sales service do you offer?",
+    answer:
+      "We provide maintenance contracts, on-site servicing, and spare part support to keep your equipment running reliably.",
+  },
+  {
+    question: "Are your machines energy efficient?",
+    answer:
+      "Yes, our systems are designed with low power consumption motors and HEPA filters, ensuring both efficiency and compliance.",
+  },
+  {
+    question: "Do you help with regulatory compliance documentation?",
+    answer:
+      "Absolutely. We provide validation protocols (DQ, IQ, OQ, PQ) and compliance documents required by GMP, ISO, and FDA standards.",
+  },
 ];
 
 const HomeFaqs = () => {
