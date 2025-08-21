@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Download, Mail, Phone } from "lucide-react";
-import { HomeHeroBannerImg, VayuBanner } from "../utils/utils";
+import { HomeHeroBannerImg } from "../utils/utils";
 import PrimaryButton from "./PrimaryButton";
 import PrimaryHeading from "./PrimaryHeading";
 import Description from "./Description";
@@ -11,23 +11,23 @@ import "swiper/css/pagination";
 
 const Banner = () => {
   return (
-    <section className="relative w-full h-screen overflow-hidden text-center flex items-center justify-center">
+    <section className="relative w-full h-[95vh] overflow-hidden text-center flex items-center justify-center">
       {/* Swiper Background */}
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         pagination={{ clickable: true }}
         loop={true}
         autoplay={{
-          delay: 3000, // 3 seconds
-          disableOnInteraction: false, // keep autoplay after user interaction
+          delay: 3000,
+          disableOnInteraction: false,
         }}
-        className="absolute inset-0"
+        className="absolute inset-0 h-[95vh]"
         style={{ zIndex: 0 }}
       >
         {HomeHeroBannerImg.map((img, idx) => (
           <SwiperSlide key={idx}>
             <div
-              className="w-full h-screen bg-cover bg-center"
+              className="w-full h-[95vh] bg-cover bg-center"
               style={{ backgroundImage: `url(${img})` }}
             ></div>
           </SwiperSlide>
@@ -35,18 +35,17 @@ const Banner = () => {
       </Swiper>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-60 z-10 h-[95vh]"></div>
 
       {/* Main Content */}
-      <div className="relative z-20 text-white px-4 max-w-5xl">
-        <PrimaryHeading className="mb-5">
-          Your Partner for Cleanroom Manufacturing
+      <div className="relative z-20 text-white px-4 max-w-4xl">
+        <PrimaryHeading className="mb-4 text-4xl md:text-4xl lg:text-5xl">
+          VayuClean Technologies
         </PrimaryHeading>
-        <Description className="text-white mb-7 lg:max-w-3xl mx-auto">
-          From isolators to AHUs, we deliver turnkey cleanroom systems that
-          support safe, compliant, and efficient pharmaceutical manufacturing.
+        <Description className="text-white mb-5 lg:max-w-2xl mx-auto text-sm md:text-base lg:text-lg">
+          Delivering cleanroom solutions engineered for safety, compliance, and efficiency.
         </Description>
-        <div className="flex justify-center items-center gap-12 max-md:flex-col max-md:gap-6">
+        <div className="flex justify-center items-center gap-8 max-md:flex-col max-md:gap-4">
           <PrimaryButton to="/categories">Explore Products</PrimaryButton>
           <a
             href="/catalogue.pdf"
@@ -61,13 +60,13 @@ const Banner = () => {
 
       {/* Bottom Info */}
       <div>
-        <div className="absolute text-start bottom-10 left-4 sm:left-10 flex flex-col md:flex-row gap-2 sm:gap-6 text-xs sm:text-sm text-primary z-20">
+        <div className="absolute text-start bottom-6 left-4 sm:left-10 flex flex-col md:flex-row gap-2 sm:gap-6 text-xs sm:text-sm text-primary z-20">
           <h6>ISO 9001 Certified</h6>
           <h6>500+ Clients</h6>
           <h6>5+ Years</h6>
         </div>
 
-        <div className="absolute text-start bottom-10 right-4 sm:right-10 flex flex-col md:flex-row gap-3 sm:gap-6 text-xs sm:text-sm text-primary z-20">
+        <div className="absolute text-start bottom-6 right-4 sm:right-10 flex flex-col md:flex-row gap-3 sm:gap-6 text-xs sm:text-sm text-primary z-20">
           <a
             href="tel:+91123456789"
             className="flex items-center gap-2 hover:underline cursor-pointer"
