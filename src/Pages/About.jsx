@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div>
       <Aboutabt />
-      <Abtcard />
+      {/* <Abtcard /> Abtcard added in Aboutabt component for better UI */}
       <Abtchoose />
       <Cta />
     </div>
